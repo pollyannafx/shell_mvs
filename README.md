@@ -1,5 +1,5 @@
 # shell_mvs
-music videos in the terminal
+music videos that run in the terminal
 
 shell is pretty fun 
 
