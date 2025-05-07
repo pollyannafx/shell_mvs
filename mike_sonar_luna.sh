@@ -44,6 +44,7 @@ EOF
 
 # music video start
 # first eight measures from 0:42
+clear
 i=0
 while [ $i -ne 4 ]
 do
