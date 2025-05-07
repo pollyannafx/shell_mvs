@@ -5,12 +5,10 @@
         # that means 0.4417647 seconds in one beat
 # song: luna
 # artist: mike sonar
-# genre: trance. it's not uptempo and intense enough to be truly 'uplifting'
-# ...it's a similar flavour of banging trance using progressive trance sensibilities as...
-# ...some old anjunabeats tracks. 
+# genre: progressive trance
 
-# note to self: this is the section starting at 0:42.
-# go back and finish the rest.
+# note to self: this was for the section starting at 0:42,
+# but i want to do it for the section starting 2:39
 
 # saving art variables
 # boom - author: me
@@ -44,20 +42,69 @@ pow=$(cat << "EOF"
 EOF
 )
 
+grass_up=$(cat << "EOF"
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+EOF
+)
+
+grass_right=$(cat << "EOF"
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+EOF
+)
+
+grass_left=$(cat << "EOF"
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+EOF
+)
+
 # music video start
-# first eight measures from 0:42
-clear
+# first eight measures of video
 i=0
 while [ $i -ne 4 ]
 do
         i=$(($i+1))
-        echo "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
-        sleep 0.44117647058
+        echo "$grass_up"
+        sleep 0.88235294116
+        clear
+        echo "$grass_left"
+        sleep 0.88235294116
+        clear
+        echo "$grass_up"
+        sleep 0.88235294116
+        clear
+        echo "$grass_right"
+        sleep 0.88235294116
+        clear
+done
+
+
+# second eight measures of video
+i=0
+while [ $i -ne 4 ]
+do
+        i=$(($i+1))
         echo "$boom"
         sleep 0.44117647058
-        echo "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
+        clear
+        echo "$grass_up"
         sleep 0.44117647058
+        clear
         echo "$boom"
+        sleep 0.44117647058
+        clear
+        echo "$grass_up"
         sleep 0.44117647058
         clear
 done
