@@ -5,7 +5,9 @@
         # that means 0.4417647 seconds in one beat
 # song: luna
 # artist: mike sonar
-# genre: progressive trance
+# genre: trance. it's not uptempo and intense enough to be truly 'uplifting'
+# ...it's a similar flavour of banging trance using progressive trance sensibilities as...
+# ...some old anjunabeats tracks. 
 
 # note to self: this is the section starting at 0:42.
 # go back and finish the rest.
