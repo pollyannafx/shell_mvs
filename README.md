@@ -3,4 +3,4 @@ music videos that run in the terminal, using ascii art (sometimes my own, someti
 
 shell is pretty fun 
 
-videos i feel proud of will be uploaded to youtube as an 'unlisted' video, and the links shall be shared here. 
+videos i feel proud of will be uploaded to youtube as 'unlisted' videos, and the links shall be shared here. 
