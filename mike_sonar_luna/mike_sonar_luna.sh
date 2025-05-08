@@ -1,5 +1,6 @@
 #!/bin/bash
 
+##### NOTE TO READER: IF YOUR TERMINAL IS LAGGING, THE VISUAL TIMING NOT ALIGN WITH THE MUSIC #####
 # notes to self:
         # 2.2667 beats in one second
         # that means 0.4417647 seconds in one beat
