@@ -1,17 +1,15 @@
 #!/bin/bash
 
-##### NOTE TO READER: IF YOUR TERMINAL IS LAGGING, THE VISUAL TIMING WILL NOT ALIGN WITH THE MUSIC #####
 # notes to self:
         # 2.2667 beats in one second
-        # that means 0.4417647 seconds in one beat
+        # that means 0.44117647058 seconds in a beat
+        # 0.88235294117 for two beats
+        # the quantities above are just for reference. due to lag, they may be adjusted.
 # song: luna
 # artist: mike sonar
-# genre: progressive trance
+# genre: trance. 
 
-# note to self: this was for the section starting at 0:42,
-# but i want to do it for the section starting 2:39
-# go back and finish the rest; this is only appropriate after the...
-# ...quiet part.
+# section starting at 2:39
 
 # saving art variables
 # boom - author: me
@@ -29,6 +27,42 @@ boom=$(cat << "EOF"
     /  _    /  /  / /  /
    /       /  /  / /  /
   /_______/  /__/_/__/
+EOF
+)
+
+# boom center - author: me
+boom_c=$(cat << "EOF"
+ _______    _______
+|  _    |  |       |
+|     __|  |       |
+|  _    |  |  _    |
+|       |  |       |
+|_______|  |_______|
+
+ _______    _______
+|       |  |       |
+|       |  |       |
+|  _    |  |  | |  |
+|       |  |  | |  |
+|_______|  |__|_|__|
+EOF
+)
+
+# boom left - author: me
+boom_left=$(cat << "EOF"
+________   ________
+\   _   \  \       \
+ \     __\  \       \
+  \   _   \  \   _   \
+   \       \  \       \
+    \_______\  \_______\
+
+  ________   ________
+  \       \  \       \
+   \       \  \       \
+    \   _   \  \  \ \  \
+     \       \  \  \ \  \
+      \_______\  \__\_\__\
 EOF
 )
 
@@ -51,18 +85,6 @@ grass_up=$(cat << "EOF"
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-
-||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-
-||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 EOF
 )
 
@@ -72,34 +94,10 @@ grass_right=$(cat << "EOF"
 ////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////
-
-////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////
-
-////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////
 EOF
 )
 
 grass_left=$(cat << "EOF"
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -116,16 +114,16 @@ while [ $i -ne 2 ]
 do
         i=$(($i+1))
         echo "$grass_up"
-        sleep 0.88235294116
+        sleep 0.85235294116
         clear
         echo "$grass_left"
-        sleep 0.88235294116
+        sleep 0.85235294116
         clear
         echo "$grass_up"
-        sleep 0.88235294116
+        sleep 0.85235294116
         clear
         echo "$grass_right"
-        sleep 0.88235294116
+        sleep 0.85235294116
         clear
 done
 
@@ -134,19 +132,19 @@ do
         i=$(($i+1))
         echo "$grass_up"
         echo "ONE!"
-        sleep 0.44117647058
+        sleep 0.42117647058
         clear
         echo "$grass_left"
         echo "TWO!"
-        sleep 0.44117647058
+        sleep 0.42117647058
         clear
         echo "$grass_up"
         echo "THREE!"
-        sleep 0.44117647058
+        sleep 0.42117647058
         clear
         echo "$grass_right"
         echo "FOUR!"
-        sleep 0.44117647058
+        sleep 0.42117647058
         clear
 done
 
@@ -157,18 +155,18 @@ while [ $i -ne 4 ]
 do
         i=$(($i+1))
         echo "$boom"
-        sleep 0.44117647058
+        sleep 0.42117647058
         clear
-        echo "$grass_up"
+        echo "$grass_left"
         echo "TWO!"
-        sleep 0.44117647058
+        sleep 0.42117647058
         clear
         echo "$boom"
-        sleep 0.44117647058
+        sleep 0.42117647058
         clear
-        echo "$grass_up"
+        echo "$grass_right"
         echo "FOUR!"
-        sleep 0.44117647058
+        sleep 0.42117647058
         clear
 done
 
@@ -176,35 +174,60 @@ while [ $i -ne 6 ]
 do
         i=$(($i+1))
         echo "$boom"
-        sleep 0.44117647058
-        echo "$pow"
-        sleep 0.44117647058
+        sleep 0.42117647058
         clear
-        echo "$boom"
-        sleep 0.44117647058
-        echo "$pow"
-        sleep 0.44117647058
+        echo "$boom_c"
+        sleep 0.42117647058
+        clear
+        echo "$boom_left"
+        sleep 0.42117647058
+        clear
+        echo "$boom_c"
+        sleep 0.42117647058
         clear
 done
 
 while [ $i -ne 8 ]
 do
         i=$(($i+1))
+        echo "$boom"
+        sleep 0.42117647058
+        echo "$pow"
+        sleep 0.42117647058
+        clear
+        echo "$boom"
+        sleep 0.42117647058
+        echo "$pow"
+        sleep 0.42117647058
+        clear
+done
+
+# third eight measures
+# instead of doing this. you could make both the boom and pow move?
+# consider the following a WIP/draft.
+i=0
+while [ $i -ne 12 ]
+do
+        i=$(($i+1))
         echo "$grass_up"
         echo "$boom"
-        sleep 0.44117647058
+        echo "$grass_up"
+        sleep 0.42117647058
         clear
         echo "$grass_left"
         echo "$pow"
-        sleep 0.44117647058
+        echo "$grass_left"
+        sleep 0.42117647058
         clear
         echo "$grass_up"
         echo "$boom"
-        sleep 0.44117647058
+        echo "$grass_up"
+        sleep 0.42117647058
         clear
         echo "$grass_right"
         echo "$pow"
-        sleep 0.44117647058
+        echo "$grass_right"
+        sleep 0.42117647058
         clear
 done
 # a cool thing to do would maybe be move the booms and the pows to the left and the right like the lines?
