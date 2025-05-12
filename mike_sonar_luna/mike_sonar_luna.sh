@@ -7,9 +7,9 @@
         # the quantities above are just for reference. due to lag, they may be adjusted.
 # song: luna
 # artist: mike sonar
-# genre: trance. 
+# genre: progressive trance
 
-# section starting at 2:39
+# from 2:39 onwards 
 
 # saving art variables
 # boom - author: me
@@ -79,6 +79,31 @@ pow=$(cat << "EOF"
 EOF
 )
 
+# pow center - author: me, stars from that link up there
+pow_c=$(cat << "EOF"
+⋆.˚. ✦.˳·˖✶ ⋆.˚.⋆.˚. ✦.˳·˚. ✦.˳·˖✶ ⋆
+ _______    _______    _______
+|   _   |  |       |  |  | |  |
+|       |  |       |  |  | |  |
+|    ___|  |  _    |  |  | |  |
+|   |      |       |  |       |
+|___|      |_______|  |_______|
+⋆.˚. ✦.˳·˖✶ ⋆.˚.⋆.˚. ✦.˳·˚. ✦.˳·˖✶ ⋆
+EOF
+)
+
+# pow left - author: me: stars from you know where already.
+pow_left=$(cat << "EOF"
+⋆.˚. ˳·˚. ✦.˳·˖✶ ⋆˳·˖✶ ⋆.˚.⋆.˚. ✦.˳
+________   ________   ________
+\   _   \  \       \  \  \ \  \
+ \       \  \       \  \  \ \  \
+  \    ___\  \  _    \  \  \ \  \
+   \   \      \       \  \       \
+    \___\      \_______\  \_______\
+⋆.˚. ˳·˚. ✦.˳·˖✶ ⋆˳·˖✶ ⋆.˚.⋆.˚. ✦.˳
+EOF
+)
 grass_up=$(cat << "EOF"
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||
@@ -203,31 +228,36 @@ do
 done
 
 # third eight measures
-# instead of doing this. you could make both the boom and pow move?
-# consider the following a WIP/draft.
 i=0
-while [ $i -ne 12 ]
+while [ $i -ne 4 ]
 do
         i=$(($i+1))
-        echo "$grass_up"
+        echo "$boom_c"
+        sleep 0.42117647058
+        echo "$pow_c"
+        sleep 0.42117647058
+        clear
         echo "$boom"
-        echo "$grass_up"
-        sleep 0.42117647058
-        clear
-        echo "$grass_left"
         echo "$pow"
-        echo "$grass_left"
         sleep 0.42117647058
         clear
-        echo "$grass_up"
-        echo "$boom"
-        echo "$grass_up"
+        echo "$boom_c"
+        echo "$pow_c"
         sleep 0.42117647058
         clear
-        echo "$grass_right"
-        echo "$pow"
-        echo "$grass_right"
+        echo "$boom_c"
+        sleep 0.42117647058
+        echo "$pow_c"
+        sleep 0.42117647058
+        clear
+        echo "$boom_left"
+        echo "$pow_left"
+        sleep 0.42117647058
+        clear
+        echo "$boom_c"
+        echo "$pow_c"
         sleep 0.42117647058
         clear
 done
-# a cool thing to do would maybe be move the booms and the pows to the left and the right like the lines?
+
+# more to come
