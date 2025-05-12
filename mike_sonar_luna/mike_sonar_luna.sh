@@ -5,6 +5,7 @@
         # that means 0.44117647058 seconds in a beat
         # 0.88235294117 for two beats
         # the quantities above are just for reference. due to lag, they may be adjusted.
+        # NOTE: is also horribly finnicky in codespaces. best to run offline. 
 # song: luna
 # artist: mike sonar
 # genre: progressive trance
